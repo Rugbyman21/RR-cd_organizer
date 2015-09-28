@@ -1,0 +1,6 @@
+<h1>CD's</h1>
+<ul>
+  <% @cds.each() do |cd| %>
+  <li><a href="/cds/<%= cd.id() %>"><%= cd.artist() %></a></li>
+  <% end %>
+</ul>

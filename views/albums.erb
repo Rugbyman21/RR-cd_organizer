@@ -1,0 +1,10 @@
+<h1>Albums</h1>
+
+<h3>Here are the albums by this artist: </h3>
+<ul>
+  <% @albums.each() do |album| %>
+  <li><%= album.name() %> <%= album.year() %></li>
+  <% end %>
+</ul>
+
+<a href="/">Return to Main Page</a>

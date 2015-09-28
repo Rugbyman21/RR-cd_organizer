@@ -1,0 +1,10 @@
+<h3>Here are all the titles in this collection:</h3>
+
+<ul>
+  <% @cd.titles().each() do |title| %>
+  <li><%= title.name() %> <%= title.year() %></li>
+  <% end %>
+</ul>
+
+<a href="/cds/<%= @cd.id%>/albums/new">Add a new album</a>
+<a href="/">Return to Main Page</a>
